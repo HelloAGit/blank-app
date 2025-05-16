@@ -1,6 +1,11 @@
 import streamlit as st
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import norm
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+# Streamlit UI
+st.title("📈 Daily Sales Probability Estimator")
+
+st.markdown("""
+Estimate the expected range of your e-commerce daily sales for tomorrow and the next week based on historical averages.
+""")
